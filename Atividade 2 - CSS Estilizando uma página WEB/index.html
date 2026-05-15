@@ -3,117 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receita de Bolo de Cenoura</title>
-
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
+    <meta name="description" content="Página introdutória sobre Three.js e sua importância para gráficos 3D na web.">
+    <link rel="icon" href="https://threejs.org/files/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <title>Introdução ao Three.js</title>
 </head>
-
 <body>
+    <header id="topo" class="cabecalho">
+        <p class="etiqueta">Tecnologia Web</p>
+        <h1>Three.js: gráficos 3D na web</h1>
+        <p class="subtitulo">
+            Uma introdução simples sobre como páginas modernas podem usar elementos tridimensionais no navegador.
+        </p>
 
-    <h1 id="titulo-principal">Receita de Bolo de Cenoura</h1>
+        <nav class="menu-principal">
+            <a href="#conceito">Conceito</a>
+            <a href="#usos">Aplicações</a>
+            <a href="#primeiros-passos">Primeiros passos</a>
+            <a href="sobre.html">Página extra</a>
+        </nav>
+    </header>
 
-    <main id="conteudo">
-
-        <section class="introducao caixa">
-            <h2>Sobre a Receita</h2>
+    <main class="conteudo">
+        <section id="conceito" class="card destaque">
+            <h2>O que é Three.js?</h2>
 
             <p>
-                O <span class="destaque">bolo de cenoura</span> é uma receita clássica,
-                simples e deliciosa. Ele combina muito bem com uma cobertura cremosa de chocolate.
+                Three.js é uma biblioteca JavaScript usada para criar gráficos 3D diretamente no navegador.
+                Ela facilita o uso de tecnologias como WebGL, permitindo que desenvolvedores criem cenas,
+                animações, jogos, simulações e experiências interativas sem precisar lidar com toda a
+                complexidade da programação gráfica de baixo nível.
             </p>
+
+            <figure>
+                <img src="https://threejs.org/files/projects/camera-webgi.png" alt="Exemplo de modelo 3D renderizado com Three.js">
+                <figcaption>Exemplo visual de uma câmera 3D criada para a web.</figcaption>
+            </figure>
+        </section>
+
+        <section id="usos" class="card">
+            <h2>Onde o Three.js pode ser usado?</h2>
 
             <p>
-                Veja mais receitas no site
-                <a href="https://www.tudogostoso.com.br/" target="_blank">Tudo Gostoso</a>.
+                O Three.js aparece em muitos tipos de projetos modernos. Ele pode ser usado em sites de
+                apresentação de produtos, visualizadores de arquitetura, experiências educacionais,
+                jogos simples e até ambientes virtuais interativos.
             </p>
-        </section>
 
-        <section class="caixa centralizado">
-            <h2>Imagem do Bolo</h2>
-
-            <img 
-                class="imagem-bolo"
-                src="assets/bolo-de-cenoura.png" 
-                alt="Imagem de um bolo de cenoura com cobertura de chocolate"
-            >
-        </section>
-
-        <section class="caixa lista-ingredientes">
-            <h2>Ingredientes da Massa</h2>
-
-            <ul>
-                <li>3 cenouras médias picadas</li>
-                <li>3 ovos</li>
-                <li>1 xícara de óleo</li>
-                <li>2 xícaras de açúcar</li>
-                <li>2 e 1/2 xícaras de farinha de trigo</li>
-                <li>1 colher de sopa de fermento em pó</li>
-            </ul>
-
-            <h2>Ingredientes da Cobertura</h2>
-
-            <ul>
-                <li>1 colher de sopa de manteiga</li>
-                <li>3 colheres de sopa de chocolate em pó</li>
-                <li>1 xícara de açúcar</li>
-                <li>1 xícara de leite</li>
+            <ul class="lista-personalizada">
+                <li>Criação de jogos 3D no navegador</li>
+                <li>Visualização de produtos em lojas virtuais</li>
+                <li>Simulações educacionais e científicas</li>
+                <li>Experiências criativas para eventos e campanhas digitais</li>
             </ul>
         </section>
 
-        <section class="caixa lista-preparo">
-            <h2>Modo de Preparo</h2>
+        <section id="primeiros-passos" class="card">
+            <h2>Primeiros passos para aprender Three.js</h2>
 
-            <ol>
-                <li>Bata no liquidificador as cenouras, os ovos e o óleo.</li>
-                <li>Em uma tigela, misture o açúcar e a farinha de trigo.</li>
-                <li>Adicione a mistura do liquidificador aos ingredientes secos.</li>
-                <li>Misture bem até formar uma massa homogênea.</li>
-                <li>Acrescente o fermento e misture delicadamente.</li>
-                <li>Coloque a massa em uma forma untada.</li>
-                <li>Leve ao forno preaquecido a 180°C por aproximadamente 40 minutos.</li>
-                <li>Para a cobertura, misture todos os ingredientes em uma panela.</li>
-                <li>Leve ao fogo até engrossar.</li>
-                <li>Despeje a cobertura sobre o bolo ainda quente.</li>
+            <p>
+                Para começar a estudar Three.js, é importante entender primeiro a estrutura básica de uma
+                cena 3D. Normalmente, um projeto envolve uma cena, uma câmera, objetos, luzes e um renderizador.
+            </p>
+
+            <ol class="passos-estudo">
+                <li>Aprender HTML, CSS e JavaScript básico</li>
+                <li>Entender os conceitos de cena, câmera e renderização</li>
+                <li>Praticar criando objetos simples, como cubos e esferas</li>
+                <li>Explorar exemplos da documentação oficial</li>
             </ol>
-        </section>
-
-        <section class="caixa">
-            <h2>Dica Especial</h2>
 
             <p>
-                Para deixar o bolo mais fofinho, peneire a farinha de trigo antes de misturar.
-                Também é importante não abrir o forno antes de 30 minutos.
+                A documentação oficial é uma das melhores fontes para estudar exemplos reais e entender
+                como a biblioteca funciona.
+            </p>
+
+            <p>
+                <a class="botao-link" href="https://threejs.org/" target="_blank" rel="noopener noreferrer">
+                    Acessar o site oficial do Three.js
+                </a>
             </p>
         </section>
 
-        <div class="caixa">
-            <h2>Observação</h2>
-            <p>Use cenouras frescas para deixar o bolo com uma cor mais bonita.</p>
-        </div>
+        <article class="card artigo-final">
+            <h2>Por que o Three.js é interessante?</h2>
 
-        <section class="caixa">
-            <h2>Áudio da Receita</h2>
+            <p>
+                O grande diferencial do Three.js é aproximar a criação 3D de quem desenvolve para a web.
+                Com ele, ideias visuais que antes exigiam programas complexos podem ser exibidas em uma
+                página acessível pelo navegador. Isso torna a web mais criativa, interativa e imersiva.
+            </p>
 
-            <audio controls>
-                <source src="assets/receita-bolo-cenoura.mp3" type="audio/mpeg">
-            </audio>
-        </section>
-
-        <section class="caixa">
-            <h2>Vídeo do Preparo</h2>
-
-            <video controls>
-                <source src="assets/preparo-bolo-cenoura.mp4" type="video/mp4">
-            </video>
-        </section>
-
+            <p>
+                Para estudantes, aprender Three.js também ajuda a desenvolver raciocínio espacial,
+                lógica de programação e noções de design digital.
+            </p>
+        </article>
     </main>
 
-    <footer>
-        <p>Receita feita com HTML e CSS ;) </p>
-    </footer>
+    <aside class="curiosidade">
+        <h2>Curiosidade</h2>
 
+        <p>
+            O nome Three.js está relacionado ao uso de três dimensões: largura, altura e profundidade.
+            Por isso, ele é muito usado quando o objetivo é criar experiências visuais em 3D.
+        </p>
+    </aside>
+
+    <footer class="rodape">
+        <a href="https://joaocolix.dev">Meu Portfólio usando threejs :) </a>
+        <p>
+            Página criada por João Pedro Bersanetti Negro - Matrícula 251041061 - Unifil 2026
+        </p>
+
+        <p>
+            <a href="#topo">Voltar ao topo</a>
+        </p>
+    </footer>
 </body>
 </html>

@@ -1,91 +1,163 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff8e7;
-    color: #333;
     margin: 0;
     padding: 0;
+    background-color: #101827;
+    color: #dbeafe;
+    font-family: "Poppins", Arial, sans-serif;
+    line-height: 1.7;
 }
 
-h1 {
-    color: orange;
-    font-size: 36px;
+.cabecalho {
+    padding: 48px 24px;
+    text-align: center;
+    background: linear-gradient(135deg, #111827, #1d4ed8);
+    border-bottom: 4px solid #38bdf8;
 }
 
-h2 {
-    color: chocolate;
-    font-size: 26px;
+#topo h1 {
+    margin: 8px 0;
+    color: #67e8f9;
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-#titulo-principal {
-    background-color: #ffcc66;
-    padding: 20px;
+.etiqueta {
+    display: inline-block;
     margin: 0;
+    padding: 6px 14px;
+    color: #0f172a;
+    background-color: #a7f3d0;
+    border-radius: 20px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
 }
 
-.destaque {
-    color: #d2691e;
-    font-weight: bold;
+.subtitulo {
+    max-width: 780px;
+    margin: 12px auto 28px;
+    color: #e0f2fe;
+    font-size: 18px;
+    text-align: center;
 }
 
-.caixa {
-    background-color: #fff0c2;
-    border: 2px solid orange;
-    padding: 15px;
-    margin: 20px 0;
-    border-radius: 10px;
+h2,
+h3,
+figcaption {
+    color: #7dd3fc;
 }
 
-
-.imagem-bolo {
-    width: 50%;
-    max-width: 400px;
-    max-height: 300px;
-    border-radius: 15px;
-}
-
-.lista-ingredientes {
-    background-color: #fff7d6;
-    padding: 20px;
-}
-
-.lista-preparo {
-    background-color: #ffe4c4;
-    padding: 20px;
-}
-
-.introducao a {
-    color: orange;
-    font-weight: bold;
+.menu-principal a,
+.rodape a {
+    margin: 6px;
+    color: #bae6fd;
+    font-weight: 600;
     text-decoration: none;
 }
 
-.introducao a:hover {
+.menu-principal a:hover,
+.rodape a:hover,
+.botao-link:hover {
+    color: #ffffff;
     text-decoration: underline;
 }
 
-section > p {
-    background-color: #fff3cd;
-    padding: 10px;
-    border-radius: 8px;
+.conteudo {
+    width: 90%;
+    max-width: 1000px;
+    margin: 32px auto;
 }
 
-audio, video {
+.card {
+    margin-bottom: 28px;
+    padding: 28px;
+    background-color: #172033;
+    border: 2px solid #334155;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.destaque {
+    border-left: 8px solid #38bdf8;
+}
+
+.card p {
+    font-size: 17px;
+    text-align: justify;
+}
+
+figure {
+    margin: 24px 0 0;
+    padding: 16px;
+    background-color: #0f172a;
+    border: 1px dashed #38bdf8;
+    border-radius: 14px;
+}
+
+img {
     display: block;
-    width: 70%;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    border-radius: 12px;
 }
 
-video {
-    max-width: 500px;
-    height: auto;
+figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
 }
 
-footer {
-    background-color: #ffcc66;
-    padding: 15px;
-    margin-top: 30px;
+.lista-personalizada {
+    padding-left: 24px;
+    list-style-type: square;
+}
+
+.lista-personalizada li::marker {
+    color: #38bdf8;
+}
+
+.passos-estudo {
+    padding: 18px 18px 18px 42px;
+    background-color: #0f172a;
+    border-left: 5px solid #a7f3d0;
+    border-radius: 12px;
+}
+
+.passos-estudo li {
+    margin-bottom: 8px;
+}
+
+.botao-link {
+    display: inline-block;
+    padding: 12px 18px;
+    color: #0f172a;
+    background-color: #67e8f9;
+    border: 2px solid #22d3ee;
+    border-radius: 12px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.curiosidade {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto 32px;
+    padding: 24px;
+    background-color: #082f49;
+    border: 2px solid #0ea5e9;
+    border-radius: 18px;
+}
+
+.curiosidade p {
+    font-family: "Roboto Mono", monospace;
+}
+
+.rodape {
+    padding: 22px;
+    text-align: center;
+    color: #cbd5e1;
+    background-color: #020617;
+    border-top: 3px solid #38bdf8;
 }
