@@ -216,4 +216,85 @@ main {
   .produtos {
     grid-template-columns: 1fr;
   }
+
+  
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 90%;
+  }
+
+  .cabecalho {
+    padding: 0 5%;
+  }
+
+  nav {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .banner {
+    padding: 35px 20px;
+  }
+
+  .texto-banner h1 {
+    font-size: 30px;
+  }
+
+  .imagem-banner img {
+    width: 100%;
+    height: 230px;
+  }
+
+  .produtos {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.rodape {
+  background-color: #111;
+  color: #fff;
+  padding: 10px 8%;
+}
+
+.conteudo-rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.rodape p {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #ccc;
+}
+
+.links-rodape {
+  display: flex;
+  gap: 20px;
+}
+
+.links-rodape a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.links-rodape a:hover {
+  color: #00bcd4;
+}
+
+@media (max-width: 600px) {
+  .conteudo-rodape {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .links-rodape {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
