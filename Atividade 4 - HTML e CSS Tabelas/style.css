@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #aaaaaaa7;
+    text-align: center;
+}
+
+h1 {
+    color: #ff6600;
+    margin: 20px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid #999;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #ff6600;
+    color: white;
+}
+
+td {
+    background-color: #ffffff;
+    color: #333;
+}
+
+tr:hover td {
+    background-color: #ffe0cc;
+}
