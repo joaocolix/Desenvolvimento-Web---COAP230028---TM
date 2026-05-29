@@ -31,6 +31,6 @@ td {
     color: #333;
 }
 
-tr:hover td {
+td:hover {
     background-color: #ffe0cc;
 }
