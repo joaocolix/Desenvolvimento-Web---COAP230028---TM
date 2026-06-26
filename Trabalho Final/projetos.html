@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projetos acadêmicos, pessoais e profissionais de João Pedro.">
+  <title>Projetos | João Pedro</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body data-page="projetos">
+  <aside class="sidebar">
+    <nav aria-label="Menu principal">
+      <a class="nav-link" href="index.html" data-nav="inicio" title="Início" aria-label="Início">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 11.5 12 4l9 7.5"/>
+          <path d="M5.5 10.5V20h13v-9.5"/>
+        </svg>
+      </a>
+
+      <a class="nav-link" href="projetos.html" data-nav="projetos" title="Projetos" aria-label="Projetos">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="4" y="4" width="6" height="6" rx="1"/>
+          <rect x="14" y="4" width="6" height="6" rx="1"/>
+          <rect x="4" y="14" width="6" height="6" rx="1"/>
+          <rect x="14" y="14" width="6" height="6" rx="1"/>
+        </svg>
+      </a>
+
+      <a class="nav-link" href="contato.html" data-nav="contato" title="Contato" aria-label="Contato">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="5" width="18" height="14" rx="2"/>
+          <path d="m4 7 8 6 8-6"/>
+        </svg>
+      </a>
+    </nav>
+  </aside>
+
+  <main class="container">
+    <header class="page-header">
+      <p class="label">MEUS PROJETOS</p>
+      <h1>Projetos que fazem parte da minha trajetória.</h1>
+      <p>
+        Uma seleção de trabalhos acadêmicos, pessoais e profissionais.
+        Cada projeto representa uma etapa diferente do meu aprendizado.
+      </p>
+    </header>
+
+    <section>
+      <div class="toolbar">
+        <h2>Seleção de projetos</h2>
+
+        <div class="filters">
+          <button class="active" data-filter="todos">Todos</button>
+          <button data-filter="academico">Acadêmicos</button>
+          <button data-filter="sistema">Sistemas</button>
+          <button data-filter="pessoal">Pessoais</button>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card" data-category="academico sistema">
+          <img src="https://ejqqfnjroyneolkkxqnx.supabase.co/storage/v1/object/public/project-images/73b9c608-48a9-4d57-8d66-034f306d7f9c/1774913334275.png" alt="Projeto de extensão da UniFil">
+          <div>
+            <p class="label">PROJETO ACADÊMICO</p>
+            <h3>Extensão — UniFil</h3>
+            <p>
+              Plataforma desenvolvida para um projeto de extensão, com publicação
+              de conteúdo, atualizações e área de gerenciamento.
+            </p>
+            <div class="project-meta">
+              <small>Node.js • TypeScript • React</small>
+              <a href="https://joaocolix.dev/" target="_blank" rel="noopener noreferrer">Ver referência ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="sistema">
+          <img src="https://ejqqfnjroyneolkkxqnx.supabase.co/storage/v1/object/public/project-images/419dd4e2-b5e0-41f1-adfd-a8ea44eb6edf/1774912036098.png" alt="Sistema de delivery Três Patetas">
+          <div>
+            <p class="label">SISTEMA DE GESTÃO</p>
+            <h3>Delivery — Três Patetas</h3>
+            <p>
+              Sistema completo para gestão de pedidos e operações de delivery,
+              integrando o fluxo de atendimento do estabelecimento.
+            </p>
+            <div class="project-meta">
+              <small>Node.js • TypeScript • Vite</small>
+              <a href="https://joaocolix.dev/" target="_blank" rel="noopener noreferrer">Ver referência ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="sistema">
+          <img src="https://ejqqfnjroyneolkkxqnx.supabase.co/storage/v1/object/public/project-images/25a50d66-e48c-44ae-b352-50d3e4ff6be0/1774912535089.png" alt="Sistema financeiro Atacado.cc">
+          <div>
+            <p class="label">SISTEMA FINANCEIRO</p>
+            <h3>Atacado.cc</h3>
+            <p>
+              Sistema voltado à gestão financeira, cobranças, pagamentos
+              e acompanhamento de operações do negócio.
+            </p>
+            <div class="project-meta">
+              <small>TypeScript • React • Integrações</small>
+              <a href="https://joaocolix.dev/" target="_blank" rel="noopener noreferrer">Ver referência ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="pessoal sistema">
+          <img src="https://ejqqfnjroyneolkkxqnx.supabase.co/storage/v1/object/public/project-images/cd8601b1-3672-4f7d-a5a2-2ba3e4d53dda/1774913809040.png" alt="Projeto Euphoria GG">
+          <div>
+            <p class="label">PROJETO PESSOAL</p>
+            <h3>Euphoria GG</h3>
+            <p>
+              Projeto de comunidade digital no qual atuei com desenvolvimento,
+              automações, identidade, experiência e organização.
+            </p>
+            <div class="project-meta">
+              <small>JavaScript • Discord.js • UI/UX</small>
+              <a href="https://github.com/joaocolix" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p id="emptyMessage" class="empty" hidden>Nenhum projeto encontrado.</p>
+    </section>
+
+    <footer>
+      <span>Mais projetos em joaocolix.dev</span>
+      <a href="https://github.com/joaocolix" target="_blank" rel="noopener noreferrer">github.com/joaocolix</a>
+    </footer>
+  </main>
+</body>
+</html>
