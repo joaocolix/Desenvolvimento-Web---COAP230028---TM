@@ -31,6 +31,14 @@ td {
     color: #333;
 }
 
-td:hover {
+td:hover{
     background-color: #ffe0cc;
+}
+
+td{
+    transition: 0.2s;
+}
+
+td:hover{
+    transform: scale(1.2)
 }
